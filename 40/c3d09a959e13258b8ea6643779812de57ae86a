@@ -1,0 +1,47 @@
+scripts/config.py
+  s_7ca38d5e476767::t_67b3f12fd0698b 1-16
+requirements.txt
+  s_7ca38d5e476767::t_9d944272eb8a0a 1-2
+scripts/build_site.py
+  s_7ca38d5e476767::t_4aeafc0462a1ad 1-110
+data/quotes.json
+  s_7ca38d5e476767::t_7e7d81a037310f 1-1302
+.gitignore
+  s_7ca38d5e476767::t_1095c88fa27dd8 1-2
+data/signals.json
+  s_7ca38d5e476767::t_c946929467a452 1-122
+scripts/fetch_data.py
+  s_7ca38d5e476767::t_5e50e71b0e05f8 1-52
+.github/workflows/update.yml
+  s_7ca38d5e476767::t_11027c4a55411f 1-42
+README.md
+  s_7ca38d5e476767::t_6964795564c849 1-34
+docs/style.css
+  s_7ca38d5e476767::t_f7d29247f8dce3 1-122
+scripts/score.py
+  s_7ca38d5e476767::t_e92301c928235f 1-135
+docs/index.html
+  s_7ca38d5e476767::t_80412f1c63d9ec 1-145
+scripts/fetch_news.py
+  s_7ca38d5e476767::t_35a281879f7194 1-58
+data/news.json
+  s_7ca38d5e476767::t_dc1e3aef262b9a 1-402
+scripts/sentiment.py
+  s_7ca38d5e476767::t_0ef876ad91e760 1-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.51-trip",
+  "base_commit_sha": "40c3d09a959e13258b8ea6643779812de57ae86a",
+  "prompts": {},
+  "sessions": {
+    "s_7ca38d5e476767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7281adbc-c5e4-4815-90ce-0837049ef2b5",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Elena Lu （陆靖沂） <elenalu@trip.com>"
+    }
+  }
+}
