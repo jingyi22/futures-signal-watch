@@ -1,0 +1,122 @@
+[
+  {
+    "code": "RB0",
+    "name": "螺纹钢",
+    "sector": "黑色系",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 3043.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-1.2%，持仓量变化+4.8%；暂无相关快讯"
+  },
+  {
+    "code": "I0",
+    "name": "铁矿石",
+    "sector": "黑色系",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 672.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-1.4%，持仓量变化+2.4%；暂无相关快讯"
+  },
+  {
+    "code": "M0",
+    "name": "豆粕",
+    "sector": "农产品",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 3208.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-1.1%，持仓量变化-7.3%；暂无相关快讯"
+  },
+  {
+    "code": "C0",
+    "name": "玉米",
+    "sector": "农产品",
+    "available": true,
+    "label": "偏多",
+    "trend_score": 1,
+    "sentiment_score": 0,
+    "last_close": 2224.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5高于MA20，近5日涨跌幅+1.7%，持仓量变化+2.8%；暂无相关快讯"
+  },
+  {
+    "code": "P0",
+    "name": "棕榈油",
+    "sector": "农产品",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 9321.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-3.4%，持仓量变化+4.4%；暂无相关快讯"
+  },
+  {
+    "code": "CU0",
+    "name": "铜",
+    "sector": "有色金属",
+    "available": true,
+    "label": "中性",
+    "trend_score": 0,
+    "sentiment_score": 0,
+    "last_close": 109200.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅+0.4%，持仓量变化+14.5%；相关快讯3条，正面0/负面0"
+  },
+  {
+    "code": "AU0",
+    "name": "黄金",
+    "sector": "贵金属",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 867.4,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-2.2%，持仓量变化-13.8%；暂无相关快讯"
+  },
+  {
+    "code": "AG0",
+    "name": "白银",
+    "sector": "贵金属",
+    "available": true,
+    "label": "偏空",
+    "trend_score": -1,
+    "sentiment_score": 0,
+    "last_close": 13010.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5低于MA20，近5日涨跌幅-6.2%，持仓量变化-8.7%；暂无相关快讯"
+  },
+  {
+    "code": "MA0",
+    "name": "甲醇",
+    "sector": "能化",
+    "available": true,
+    "label": "偏多",
+    "trend_score": 1,
+    "sentiment_score": 0,
+    "last_close": 3464.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5高于MA20，近5日涨跌幅+10.7%，持仓量变化+4.3%；暂无相关快讯"
+  },
+  {
+    "code": "TA0",
+    "name": "PTA",
+    "sector": "能化",
+    "available": true,
+    "label": "偏多",
+    "trend_score": 1,
+    "sentiment_score": 0,
+    "last_close": 6674.0,
+    "last_date": "2026-10-28",
+    "reason": "MA5高于MA20，近5日涨跌幅+3.9%，持仓量变化-4.1%；暂无相关快讯"
+  }
+]
