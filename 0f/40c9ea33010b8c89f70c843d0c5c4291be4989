@@ -1,0 +1,52 @@
+scripts/sentiment.py
+  s_7ca38d5e476767::t_b4774ea6e21734 5-8
+  s_7ca38d5e476767::t_03d14febe04f5c 62-71,80-81
+scripts/fetch_macro_news.py
+  s_7ca38d5e476767::t_0c2d37ca745d9d 1-61
+docs/style.css
+  s_7ca38d5e476767::t_edd040aa05f277 93-98
+scripts/config.py
+  s_7ca38d5e476767::t_f6fd020fc72a23 1,3-4,6-15
+data/signals.json
+  s_7ca38d5e476767::t_79d512c270ffd3 12-13,25-26,38-39,42,55-56,59,72-73,76,89-90,93,103,106-107,110,120,123-124,127,140,153
+  s_7ca38d5e476767::t_0d5b53e8d121a3 40-41,43,57-58,60,74-75,77,91-92,94,108-109,111,125-126,128,141,154
+data/news.json
+  s_7ca38d5e476767::t_0d5b53e8d121a3 401-440
+scripts/fetch_foreign.py
+  s_7ca38d5e476767::t_49cd532d25e506 1-31,33-50
+  s_7ca38d5e476767::t_8b63c21fe9582d 32
+.github/workflows/update.yml
+  s_7ca38d5e476767::t_3a322c6402e00a 30-35
+data/foreign.json
+  s_7ca38d5e476767::t_0d5b53e8d121a3 4-5,9-10,14-15,19-20,24-25,29-30
+  s_7ca38d5e476767::t_90f11df20f601f 1-3,6-8,11-13,16-18,21-23,26-28,31-36
+data/macro_news.json
+  s_7ca38d5e476767::t_023f34bdefd80b 1-1000,1046-1047
+  s_7ca38d5e476767::t_0d5b53e8d121a3 1001-1045
+docs/index.html
+  s_7ca38d5e476767::t_0d5b53e8d121a3 12,49-50,61-62,73-74,85-86,97-98,109-110,122,134
+  s_7ca38d5e476767::t_a90a30e4bcb600 25-26,37-38,121,133,147-149,152-153
+scripts/score.py
+  s_7ca38d5e476767::t_03565ba23cb9e4 4,8-12,36,40,52,59-66,73-96,109-110,115-122,124-126,140-142,145,157-158
+  s_7ca38d5e476767::t_77885781d66ca1 123
+scripts/build_site.py
+  s_7ca38d5e476767::t_563420e6da7e57 66-68,71-72
+  s_7ca38d5e476767::t_49b86bbea77d79 21,26
+  s_7ca38d5e476767::t_2b7ba42ca897b6 86-93,101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.51-trip",
+  "base_commit_sha": "0f40c9ea33010b8c89f70c843d0c5c4291be4989",
+  "prompts": {},
+  "sessions": {
+    "s_7ca38d5e476767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7281adbc-c5e4-4815-90ce-0837049ef2b5",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Elena Lu （陆靖沂） <elenalu@trip.com>"
+    }
+  }
+}
