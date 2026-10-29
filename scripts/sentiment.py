@@ -2,8 +2,10 @@
 关键词词典 + 新闻情绪打分。
 
 逻辑：
-1. 判断一条快讯是否与某个品种"相关"——命中该品种的别名词或所属板块的板块词，才算相关，
-   避免无关新闻（比如纯地震快讯）稀释信号。
+1. 判断一条快讯是否与某个品种"相关"——命中该品种的别名词、所属板块的板块词、
+   或该板块的宏观触发词（如贵金属板块的"美联储/加息"），才算相关，
+   避免无关新闻（比如纯地震快讯）稀释信号。宏观触发词不要求同时出现品种名，
+   因为FOMC声明原文不会提"黄金"，但对贵金属板块仍是强相关信号。
 2. 只在相关快讯里，用该品种所属板块的正负面关键词词典做计数，
    net = 正面命中数 - 负面命中数，再映射到 -1/0/+1。
 
@@ -57,6 +59,16 @@ SECTOR_KEYWORDS = {
     },
 }
 
+# 板块宏观触发词：命中即判定相关，不要求同时出现品种名/板块名
+# 用于匹配宏观快讯（如FOMC声明、央行讲话、地缘政治），这类新闻通常不会出现具体品种词
+SECTOR_MACRO_TRIGGERS = {
+    "黑色系": ["基建", "房地产", "钢铁行业", "地产政策"],
+    "农产品": ["天气", "关税", "贸易战", "贸易协定", "极端天气"],
+    "有色金属": ["美联储", "美元", "加息", "降息", "工业产出", "制造业PMI"],
+    "贵金属": ["美联储", "美元", "加息", "降息", "FOMC", "非农", "CPI", "通胀", "避险情绪", "地缘冲突"],
+    "能化": ["原油", "OPEC", "美联储", "美元", "地缘冲突"],
+}
+
 
 def is_relevant(content: str, code: str, sector: str) -> bool:
     for alias in VARIETY_ALIASES.get(code, []):
@@ -64,6 +76,9 @@ def is_relevant(content: str, code: str, sector: str) -> bool:
             return True
     for alias in SECTOR_ALIASES.get(sector, []):
         if alias in content:
+            return True
+    for trigger in SECTOR_MACRO_TRIGGERS.get(sector, []):
+        if trigger in content:
             return True
     return False
 

@@ -18,9 +18,12 @@ CARD_TEMPLATE = """
     <span class="label {cls}">{label}</span>
   </div>
   <div class="price">最新收盘：{last_close} （{last_date}）</div>
+  {foreign_line}
   <div class="reason">{reason}</div>
 </div>
 """
+
+FOREIGN_LINE_TEMPLATE = '<div class="foreign">外盘参考：{foreign_name} 最新 {last_price} （{chg_pct:+.2f}%）</div>'
 
 UNAVAILABLE_TEMPLATE = """
 <div class="card unavailable">
@@ -60,11 +63,13 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     仅为投资知识科普参考，不构成任何形式的投资建议。市场有风险，入市需谨慎。
   </p>
   <p class="method">
-    方法说明：标签综合"趋势分"（MA5/MA20相对位置、近5日涨跌幅方向、持仓量变化方向）
-    和"情绪分"（新闻快讯关键词正负面计数）规则打分得出，趋势权重更高，仅为方向性参考，不构成交易建议。
+    方法说明：标签综合"趋势分"（MA5/MA20相对位置、近5日涨跌幅方向、持仓量变化方向，
+    有外盘对应品种再加外盘当日涨跌方向）和"情绪分"（国内行业快讯+国际宏观快讯关键词正负面计数）
+    规则打分得出，趋势权重更高，仅为方向性参考，不构成交易建议。
   </p>
   <p class="source">
-    数据来源：新浪财经期货行情、上海有色网（SHMET）期货快讯，经 <a href="https://github.com/akfamily/akshare" target="_blank">akshare</a> 封装获取。
+    数据来源：新浪财经期货行情、上海有色网（SHMET）期货快讯、外盘实时报价（LME/COMEX/CBOT等）、
+    东方财富全球财经快讯，经 <a href="https://github.com/akfamily/akshare" target="_blank">akshare</a> 封装获取。
   </p>
 </footer>
 </body>
@@ -78,6 +83,14 @@ def render_card(signal: dict) -> str:
             name=html.escape(signal["name"]), sector=html.escape(signal["sector"])
         )
     cls = LABEL_CLASS.get(signal["label"], "neutral")
+    foreign = signal.get("foreign")
+    foreign_line = ""
+    if foreign:
+        foreign_line = FOREIGN_LINE_TEMPLATE.format(
+            foreign_name=html.escape(foreign["foreign_name"]),
+            last_price=foreign["last_price"],
+            chg_pct=foreign["chg_pct"],
+        )
     return CARD_TEMPLATE.format(
         cls=cls,
         name=html.escape(signal["name"]),
@@ -85,6 +98,7 @@ def render_card(signal: dict) -> str:
         label=html.escape(signal["label"]),
         last_close=signal["last_close"],
         last_date=html.escape(signal["last_date"]),
+        foreign_line=foreign_line,
         reason=html.escape(signal["reason"]),
     )
 

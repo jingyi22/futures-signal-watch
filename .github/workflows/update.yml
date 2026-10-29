@@ -27,6 +27,12 @@ jobs:
       - name: Fetch news
         run: python scripts/fetch_news.py
 
+      - name: Fetch foreign quotes
+        run: python scripts/fetch_foreign.py
+
+      - name: Fetch macro news
+        run: python scripts/fetch_macro_news.py
+
       - name: Score signals
         run: python scripts/score.py
 
