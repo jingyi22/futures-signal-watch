@@ -1,33 +1,33 @@
 {
   "M0": {
     "foreign_name": "CBOT-黄豆粉",
-    "last_price": 328.79,
-    "chg_pct": -2.058385463211191
+    "last_price": 326.11,
+    "chg_pct": -0.9687215305192827
   },
   "C0": {
     "foreign_name": "CBOT-玉米",
-    "last_price": 449.975,
-    "chg_pct": -0.39291643608189863
+    "last_price": 449.57,
+    "chg_pct": -0.37229916897507076
   },
   "P0": {
     "foreign_name": "马棕油",
-    "last_price": 4640.48,
-    "chg_pct": 0.5303292894280668
+    "last_price": 4682.88,
+    "chg_pct": 1.4488734835355308
   },
   "CU0": {
     "foreign_name": "LME铜3个月",
-    "last_price": 14313.42,
-    "chg_pct": -1.1333448454498356
+    "last_price": 14173.565,
+    "chg_pct": -1.2742311844808936
   },
   "AU0": {
     "foreign_name": "COMEX黄金",
-    "last_price": 4040.05,
-    "chg_pct": -0.28507256392535607
+    "last_price": 3912.002,
+    "chg_pct": -2.9617006498983014
   },
   "AG0": {
     "foreign_name": "COMEX白银",
-    "last_price": 52.637,
-    "chg_pct": -1.9174151231692254
+    "last_price": 49.294,
+    "chg_pct": -5.8915616647575515
   },
   "RB0": null,
   "I0": null,
